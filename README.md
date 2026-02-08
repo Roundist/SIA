@@ -1,6 +1,6 @@
 # Say It Anyway.Ja Website
 
-A modern, single-page React website for the "Say It Anyway.Ja" card game. This website features slide-based navigation, search functionality, detailed gradient backgrounds, and displays the game mascot.
+A modern, single-page React website for the "Say It Anyway.Ja" card game. Built with React + Vite and designed to deploy on Vercel (no backend).
 
 ## Features
 
@@ -56,34 +56,31 @@ npm run build
 
 The built files will be in the `dist` directory.
 
-## Deployment to GitHub Pages
+## Deploy to Vercel (recommended)
 
-### First Time Setup
+### Deploy with the Vercel dashboard (easiest)
 
-1. Install gh-pages (already in package.json):
+1. Push this project to GitHub.
+2. Go to Vercel → **Add New → Project**.
+3. Import your repo.
+4. Vercel should auto-detect Vite:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+5. Click **Deploy**.
+
+### Deploy with the Vercel CLI
+
 ```bash
 npm install
+npm i -g vercel
+vercel
 ```
 
-2. Update the `base` path in `vite.config.js` if your repository name is different from `SIA`:
-```js
-base: '/YOUR-REPO-NAME/',
-```
+To deploy to production:
 
-3. Deploy to GitHub Pages:
 ```bash
-npm run deploy
+vercel --prod
 ```
-
-### GitHub Repository Settings
-
-1. Go to your repository on GitHub
-2. Navigate to Settings > Pages
-3. Under "Source", select "Deploy from a branch"
-4. Choose the `gh-pages` branch and `/ (root)` folder
-5. Click Save
-
-Your site will be live at: `https://[username].github.io/SIA/`
 
 ## Project Structure
 
