@@ -1,0 +1,188 @@
+.play-for-points-slide {
+  background: linear-gradient(135deg,
+    #052e2b 0%,
+    #064e3b 35%,
+    #10b981 70%,
+    #052e2b 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.play-for-points-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(16, 185, 129, 0.22) 0%, transparent 55%),
+    radial-gradient(circle at 80% 70%, rgba(124, 58, 237, 0.12) 0%, transparent 55%),
+    radial-gradient(circle at 45% 110%, rgba(245, 158, 11, 0.10) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.slide-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 48px;
+  text-align: center;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.points-content {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 34px;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.rules-section {
+  margin-bottom: 40px;
+  background: rgba(10, 12, 18, 0.28);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.22);
+}
+
+.section-heading {
+  font-size: 1.75rem;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.rules-list {
+  list-style-position: inside;
+  color: white;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+}
+
+.rules-list li {
+  margin-bottom: 16px;
+}
+
+.important-note {
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  margin: 0;
+}
+
+.level-list {
+  list-style: none;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.level-list li {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.level-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+}
+
+.level-list strong {
+  font-weight: 600;
+}
+
+.points-note {
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-style: italic;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.wild-card-intro {
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.modifiers-list {
+  list-style: none;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.modifiers-list li {
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.modifiers-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .intro-text {
+    font-size: 1.1rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+  }
+
+  .rules-list,
+  .level-list,
+  .modifiers-list {
+    font-size: 1rem;
+  }
+
+  .rules-section {
+    padding: 20px;
+  }
+
+  .important-note {
+    font-size: 1rem;
+  }
+}
